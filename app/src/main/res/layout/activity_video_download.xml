@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ddddaa"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clivertechbutton"
+        android:onClick="clivertech"
+        android:text="Download clivertech demo"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="commercial"
+        android:id="@+id/commercialbutton"
+        android:layout_alignRight="@+id/clivertechbutton"
+        android:layout_below="@+id/clivertechbutton"
+        android:text="Download android commercial"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_alignRight="@+id/clivertechbutton"
+        android:layout_height="wrap_content"
+        android:onClick="clivertechwd"
+        android:layout_below="@+id/commercialbutton"
+        android:id="@+id/clivertechwdbutton"
+        android:text=" clivertech without download"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="commercialwd"
+        android:layout_alignRight="@+id/clivertechbutton"
+        android:layout_below="@id/clivertechwdbutton"
+        android:id="@+id/commercialwdbutton"
+        android:text="commercial with out download"/>
+
+</RelativeLayout>
